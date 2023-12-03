@@ -19,7 +19,7 @@ public class LoggingInterceptor implements HandlerInterceptor {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 
-		log.info("Inside preHandle of LoggingInterceptor");
+		log.info("Inside preHandle of LoggingInterceptorrrrr");
 		return true;
 	}
 
