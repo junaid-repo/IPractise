@@ -1,0 +1,12 @@
+server:
+  port: 4007
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bbills
+    username: postgres
+    password: pass
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

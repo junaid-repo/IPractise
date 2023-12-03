@@ -1,0 +1,8 @@
+package com.javatechie.executor.vo;
+
+import lombok.Data;
+
+@Data
+public class ClassDTO {
+
+}

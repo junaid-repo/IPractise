@@ -1,0 +1,35 @@
+package com.javatechie.jpa.entity;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Table
+@Data
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+public class ClassEntity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	private Integer std;
+	
+	@NotBlank(message="section cannot be blank")
+	private String section;
+	@NotBlank(message="strength cannot be blank")
+	private Integer strength;
+	private Integer boys;
+	private Integer girls;
+	private String classTeacher;
+	private List<Teacher> teachers;
+}

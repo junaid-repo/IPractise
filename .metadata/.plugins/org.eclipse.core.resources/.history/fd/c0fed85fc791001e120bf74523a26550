@@ -1,0 +1,26 @@
+package com.javatechie.executor.vo;
+
+import java.util.List;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ClassDTO {
+	private Integer std;
+
+	private String section;
+
+	private Integer strength;
+	private Integer boys;
+	private Integer girls;
+	private String classTeacher;
+	private List<Teacher> teachers;
+
+
+
+}

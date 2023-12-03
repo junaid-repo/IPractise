@@ -1,0 +1,5 @@
+package com.javatechie.executor.api.external;
+
+public class CommFacade {
+
+}

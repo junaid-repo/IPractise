@@ -1,0 +1,26 @@
+package com.javatechie.jpa.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.javatechie.jpa.entity.ClassEntity;
+import com.javatechie.jpa.repository.SchoolRepository;
+
+@Service
+public class SchoolService {
+
+	@Autowired
+	SchoolRepository schoolRepo;
+
+	public String saveTeacher(ClassEntity request) {
+		schoolRepo.save(request);
+
+		return "success";
+	}
+
+	public ClassEntity getClassDetails(Integer std) {
+		// TODO Auto-generated method stub
+		return schoolRepo.findById(std).get();
+	}
+
+}

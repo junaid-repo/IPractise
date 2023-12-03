@@ -1,0 +1,12 @@
+package com.javatechie.jpa.advice;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+	
+	@ResponseStatus(HttpStatus.BAD_REQUEST)
+	
+
+}
